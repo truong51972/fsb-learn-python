@@ -1,0 +1,12 @@
+[project]
+name = "s10-practice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "folium>=0.20.0",
+    "notebook>=7.5.7",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+]
