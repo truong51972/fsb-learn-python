@@ -1,0 +1,149 @@
+{
+    "all_features": [
+        "age",
+        "trestbps",
+        "chol",
+        "thalach",
+        "oldpeak",
+        "sex",
+        "cp",
+        "fbs",
+        "restecg",
+        "exang",
+        "slope",
+        "ca",
+        "thal"
+    ],
+    "selected_features": [
+        "age",
+        "trestbps",
+        "thalach",
+        "sex",
+        "cp",
+        "restecg",
+        "exang",
+        "slope",
+        "ca",
+        "thal"
+    ],
+    "dropped_features": [
+        "chol",
+        "fbs",
+        "oldpeak"
+    ],
+    "weak_features": [
+        "chol",
+        "fbs"
+    ],
+    "collinear_dropped": [
+        "oldpeak"
+    ],
+    "analysis_details": [
+        {
+            "feature": "age",
+            "type": "numeric",
+            "mean_class_0": -0.193,
+            "mean_class_1": 0.2278,
+            "mean_diff": 0.4208,
+            "t_statistic": -3.3647,
+            "p_value": 0.000892,
+            "significant_at_0.05": "True"
+        },
+        {
+            "feature": "trestbps",
+            "type": "numeric",
+            "mean_class_0": -0.1253,
+            "mean_class_1": 0.1478,
+            "mean_diff": 0.2731,
+            "t_statistic": -2.107,
+            "p_value": 0.036236,
+            "significant_at_0.05": "True"
+        },
+        {
+            "feature": "chol",
+            "type": "numeric",
+            "mean_class_0": -0.0711,
+            "mean_class_1": 0.0839,
+            "mean_diff": 0.1549,
+            "t_statistic": -1.2173,
+            "p_value": 0.224668,
+            "significant_at_0.05": "False"
+        },
+        {
+            "feature": "thalach",
+            "type": "numeric",
+            "mean_class_0": 0.3769,
+            "mean_class_1": -0.4448,
+            "mean_diff": -0.8218,
+            "t_statistic": 6.8331,
+            "p_value": 0.0,
+            "significant_at_0.05": "True"
+        },
+        {
+            "feature": "oldpeak",
+            "type": "numeric",
+            "mean_class_0": -0.361,
+            "mean_class_1": 0.426,
+            "mean_diff": 0.787,
+            "t_statistic": -6.3474,
+            "p_value": 0.0,
+            "significant_at_0.05": "True"
+        },
+        {
+            "feature": "sex",
+            "type": "categorical",
+            "chi2_statistic": 21.6988,
+            "p_value": 3e-06,
+            "significant_at_0.05": "True"
+        },
+        {
+            "feature": "cp",
+            "type": "categorical",
+            "chi2_statistic": 58.5767,
+            "p_value": 0.0,
+            "significant_at_0.05": "True"
+        },
+        {
+            "feature": "fbs",
+            "type": "categorical",
+            "chi2_statistic": 0.2814,
+            "p_value": 0.595787,
+            "significant_at_0.05": "False"
+        },
+        {
+            "feature": "restecg",
+            "type": "categorical",
+            "chi2_statistic": 7.0803,
+            "p_value": 0.029009,
+            "significant_at_0.05": "True"
+        },
+        {
+            "feature": "exang",
+            "type": "categorical",
+            "chi2_statistic": 40.966,
+            "p_value": 0.0,
+            "significant_at_0.05": "True"
+        },
+        {
+            "feature": "slope",
+            "type": "categorical",
+            "chi2_statistic": 33.2714,
+            "p_value": 0.0,
+            "significant_at_0.05": "True"
+        },
+        {
+            "feature": "ca",
+            "type": "categorical",
+            "chi2_statistic": 53.2534,
+            "p_value": 0.0,
+            "significant_at_0.05": "True"
+        },
+        {
+            "feature": "thal",
+            "type": "categorical",
+            "chi2_statistic": 71.694,
+            "p_value": 0.0,
+            "significant_at_0.05": "True"
+        }
+    ]
+}
