@@ -128,7 +128,7 @@ EXAMPLES = {
 # -----------------------------
 @st.cache_resource
 def load_artifacts():
-    model_dir = "./models"
+    model_dir = os.path.join(os.path.dirname(__file__), "models")
     # Models
     models = {}
     for name in MODEL_NAMES:
