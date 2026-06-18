@@ -2,6 +2,14 @@
 
 This repository contains a complete ML training pipeline for heart disease classification (binary classification). The pipeline is implemented as a Jupyter notebook (`main.ipynb`) with clear, step-by-step cells.
 
+## Live Demo
+
+A Streamlit web app is deployed at:
+
+👉 **[Heart Disease Prediction App](https://heart-disease-prediction-fsb.streamlit.app/)**
+
+Enter patient features and get real-time predictions from all 5 trained models + an ensemble soft-voting result.
+
 ## Dataset
 
 **Source**: Heart Disease (UCI) dataset
