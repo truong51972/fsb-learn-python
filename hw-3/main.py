@@ -128,7 +128,7 @@ EXAMPLES = {
 # -----------------------------
 @st.cache_resource
 def load_artifacts():
-    model_dir = "models"
+    model_dir = "./models"
     # Models
     models = {}
     for name in MODEL_NAMES:
@@ -197,14 +197,14 @@ def draw_prediction_chart(predictions: dict):
 
     # Majority voting among individual models (exclude Ensemble)
     individual_models = [k for k in predictions.keys() if k != "Ensemble (Soft Voting)"]
-    votes_hd = sum(1 for k in individual_models if predictions[k]["label"] == "Heart Disease")
+    votes_hd = sum(
+        1 for k in individual_models if predictions[k]["label"] == "Heart Disease"
+    )
     votes_no_hd = len(individual_models) - votes_hd
     majority_label = "Heart Disease" if votes_hd >= votes_no_hd else "No Heart Disease"
 
     # Green if model matches majority, red if not
-    colors = [
-        "#2e7d32" if label == majority_label else "#c92f4f" for label in labels
-    ]
+    colors = ["#2e7d32" if label == majority_label else "#c92f4f" for label in labels]
 
     fig, ax = plt.subplots(figsize=(8.4, 5.1))
 
@@ -271,7 +271,6 @@ with left_col:
     defaults = EXAMPLES[st.session_state.example_select]
 
     with st.form("patient_form"):
-
         row1 = st.columns(4)
         with row1[0]:
             age = st.number_input(
